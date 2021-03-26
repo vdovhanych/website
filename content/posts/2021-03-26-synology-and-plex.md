@@ -12,4 +12,6 @@ keywords:
     - filebot
     - automation
 ---
-## Automated plex setup on my Synology nas.
+# Automated plex setup on my Synology nas.
+
+## Plex install and setup
