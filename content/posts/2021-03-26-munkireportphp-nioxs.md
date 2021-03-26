@@ -4,13 +4,11 @@ date: 2021-03-26 11:08:52
 category: notes
 tags:
     - Linux
-    - NixOS
-    - Mac
 keywords:
     - munkireport
     - nixos
-    - nixos morp
-    -
+    - nixos
+    - morph
 ---
 
 ## MunkireportPHP on NixOS using morph
