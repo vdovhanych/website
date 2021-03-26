@@ -39,11 +39,11 @@ weight = 4
 [params]
 
   colortheme = "dark" # dark, light, white, or classic
-  rss = true # generate rss feed. default value is false
+  rss = false # generate rss feed. default value is false
   googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
-  description = "Random stuff i'am interested in and it's worth to write about it."
+  description = "Random stuff i'am interested and feel it's worth writing about."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
