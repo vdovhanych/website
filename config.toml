@@ -1,4 +1,4 @@
-baseURL = "https://pages.dovh.cz"
+baseURL = "https://dovh.cz"
 languageCode = "en-us"
 title = "DOVH"
 theme = "cactus"
