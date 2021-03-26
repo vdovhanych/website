@@ -21,14 +21,19 @@ url = "/posts"
 weight = 2
 
 [[menu.main]]
+name = "Writings"
+url = "/tips"
+weight = 3
+
+[[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 4
+weight = 5
 
 [markup]
   [markup.tableOfContents]
@@ -43,7 +48,7 @@ weight = 4
   googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
-  description = "Random stuff i'am interested in and it's worth it to write about it."
+  description = "Random stuff i'am interested in and it's worth to write about it."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
@@ -58,7 +63,7 @@ weight = 4
   show_updated = false # default
 
   [params.comments]
-    enabled = false # default
+    enabled = true # default
     engine = "disqus" # more supported engines will be added.
 
   # the value of name should be an valid font awesome icon name (brands type)
