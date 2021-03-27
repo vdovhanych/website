@@ -1,8 +1,12 @@
 ---
 title: About me
-date: 2021-03-25 17:51:42
+date: 2020-03-25 17:51:42
 ---
 
-Random stuff about macOS, Linux, and the things I'm actively using at my work. Take a look at my Github profile.
+I am Vitalij, an overall IT enthusiast from the Czech Republic, currently working as IT Admin and helping with the creation of the best hardware crypto wallet.
 
-Github: [vdovhanych](https://github.com/vdovhanych)
+I am very passionate about technology, running, gaming, watching TV shows, and also a bit of most IT-related stuff. In my free time, I also learn to develop in Swift and Python.
+
+
+Random doge for crypto enthusiasts :)
+![Go get some doge for yourself](https://dovh.cz/img/doge-pixelart.jpg)
