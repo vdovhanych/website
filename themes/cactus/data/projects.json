@@ -1,0 +1,14 @@
+{
+   "list": [
+      {
+        "name":"Trezor",
+        "url":"https://github.com/trezor/",
+        "desc":"The Original Hardware Wallet"
+      },
+      {
+        "name":"Randomizer3",
+        "url":"https://github.com/vdovhanych/Randomizer3",
+        "desc":"Easy and simple iPhone app to generate random dota2 heroes and also food"
+      }
+   ]
+}
