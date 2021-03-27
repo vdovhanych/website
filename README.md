@@ -1,4 +1,4 @@
-![Build Status](https://gitlab.com/pages/hugo/badges/master/build.svg)
+[![deploy status](https://gitlab.com/vdovhanych/dovh.gitlab.io/badges/master/pipeline.svg)](https://gitlab.com/vdovhanych/dovh.gitlab.io/-/commits/master)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -6,8 +6,6 @@
 
 - [GitLab CI](#gitlab-ci)
 - [Building locally](#building-locally)
-- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-- [Did you fork this project?](#did-you-fork-this-project)
 - [Troubleshooting](#troubleshooting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
