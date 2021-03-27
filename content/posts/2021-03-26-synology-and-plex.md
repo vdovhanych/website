@@ -15,3 +15,5 @@ keywords:
 # Automated plex setup on my Synology nas.
 
 ## Plex install and setup
+
+TO DO 

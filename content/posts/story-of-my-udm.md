@@ -11,6 +11,7 @@ keywords:
     - network
 ---
 ## The story of how i ended up with expensive and really bad router.
+TO DO
 
 ![Getting my UDM](https://dovh.cz/img/udm-base.jpeg)
 
