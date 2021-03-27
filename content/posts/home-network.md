@@ -10,6 +10,6 @@ keywords:
     - home
     - automation
 ---
-# Home network setup.
+## Home network setup.
 
 TO DO

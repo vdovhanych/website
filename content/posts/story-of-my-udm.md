@@ -1,5 +1,5 @@
 ---
-title: How i beta tested UniFi Product UDM
+title: How i beta tested UDM
 date: 2021-01-12 09:00:00
 tags:
     - Network
