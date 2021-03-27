@@ -1,14 +1,5 @@
 ![Build Status](https://gitlab.com/pages/hugo/badges/master/build.svg)
 
----
-
-Example [Hugo] website using GitLab Pages.
-
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation https://docs.gitlab.com/ce/user/project/pages/.
-
----
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -34,35 +25,17 @@ To work locally with this project, you'll have to follow the steps below:
 1. [Install][] Hugo
 1. Preview your project: `hugo server`
 1. Add content
-1. Generate the website: `hugo` (optional)
+
 
 Read more at Hugo's [documentation][].
 
 ### Preview your site
+[My site](https://dovh.cz)
 
 If you clone or download this project to your local computer and run `hugo server`,
-your site can be accessed under `localhost:1313/hugo/`.
+your site can be accessed under `localhost:1313`.
 
-The theme used is adapted from http://themes.gohugo.io/beautifulhugo/.
-
-## GitLab User or Group Pages
-
-To use this project as your user/group website, you will need one additional
-step: just rename your project to `namespace.gitlab.io`, where `namespace` is
-your `username` or `groupname`. This can be done by navigating to your
-project's **Settings**.
-
-You'll need to configure your site too: change this line
-in your `config.toml`, from `"https://pages.gitlab.io/hugo/"` to `baseurl = "https://namespace.gitlab.io"`.
-Proceed equally if you are using a [custom domain][post]: `baseurl = "http(s)://example.com"`.
-
-Read more about [user/group Pages][userpages] and [project Pages][projpages].
-
-## Did you fork this project?
-
-If you forked this project for your own use, please go to your project's
-**Settings** and remove the forking relationship, which won't be necessary
-unless you want to contribute back to the upstream project.
+The theme used is adapted from https://github.com/monkeyWzr/hugo-theme-cactus.
 
 ## Troubleshooting
 

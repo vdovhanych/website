@@ -4,9 +4,8 @@ date: 2021-03-26 09:00:00
 tags:
     - Synology
     - plex
-    - filebot
 categories:
-- homesetup
+- media
 keywords:
     - plex
     - filebot
