@@ -5,7 +5,7 @@ tags:
     - ios
     - app
 categories:
-- dev
+- development
 keywords:
     - ios
     - apps
