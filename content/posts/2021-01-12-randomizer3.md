@@ -1,6 +1,6 @@
 ---
 title: Randomizer3 iPhone App
-date: 2021-03-26 09:00:00
+date: 2021-01-12 09:00:00
 tags:
     - ios
     - app
