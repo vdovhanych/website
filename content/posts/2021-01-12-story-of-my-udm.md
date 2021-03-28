@@ -13,6 +13,6 @@ keywords:
 ## The story of how i ended up with expensive and really bad router.
 TO DO
 
-[Randomizer3 on Github](https://github.com/vdovhanych/Randomizer3)
+![UDM](https://dovh.cz/img/udm-base.jpeg)
 
 This was first and for really long time last day i was really happy to get the device.

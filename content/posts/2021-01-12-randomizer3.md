@@ -13,4 +13,4 @@ keywords:
 ---
 ## Simple app that generates random Dota 2 heroes and also tasty food.
 
-TO DO
+[Randomizer3 on Github](https://github.com/vdovhanych/Randomizer3)
