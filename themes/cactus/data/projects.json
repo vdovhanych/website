@@ -2,7 +2,7 @@
    "list": [
       {
         "name":"Trezor",
-        "url":"https://github.com/trezor/",
+        "url":"https://trezor.io/",
         "desc":"The Original Hardware Wallet"
       }
    ]
