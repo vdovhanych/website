@@ -68,6 +68,9 @@ weight = 4
     name = "github"
     link = "https://github.com/vdovhanych"
   [[params.social]]
+    name = "twitter"
+    link = "http://twitter.com/vdovhanych"
+  [[params.social]]
     name = "linkedin"
     link = "https://linkedin.com/in/vitalij-dovhanyc"
   [[params.social]]
