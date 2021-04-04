@@ -4,11 +4,11 @@ date: 2021-03-26 09:00:00
 tags:
     - linux
 categories:
-- configurations
+- services
 keywords:
     - MunkireportPHP
     - NixOS
 ---
 ## MunkireportPHP on NixOS using morph
 
-## TO DO 
+## TO DO
