@@ -38,9 +38,9 @@
             <a class="category-link" href="{{ "/categories/" | relLangURL }}{{ $value | urlize }}">{{ $value }}</a>
             {{ end }}
         </div>
-        {{ end }}
-        {{ $showReadTime := .Site.Params.showReadTime | default true }}
-        {{if $showReadTime}}
+          {{ end }}
+          {{ $showReadTime := .Site.Params.showReadTime | default false }}
+          {{if $showReadTime}}
         <div class="article-read-time">
           <i class="far fa-clock"></i>
           {{ $readTime := math.Round (div (countwords .Content) 220.0) }}
