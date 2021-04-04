@@ -1,6 +1,6 @@
 ---
 title: Getting Started with iOS App
-date: 2021-04-05 09:00:00
+date: 2021-04-04 09:00:00
 tags:
     - ios
     - app
