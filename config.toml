@@ -57,6 +57,7 @@ weight = 4
 
   # Post page settings
   show_updated = false # default
+  showReadTime = true # default
 
   [params.comments]
     enabled = false # default false
