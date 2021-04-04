@@ -4,8 +4,6 @@ date: 2021-04-05 09:00:00
 tags:
     - synology
     - docker
-categories:
--
 keywords:
     - synology
     - docker
