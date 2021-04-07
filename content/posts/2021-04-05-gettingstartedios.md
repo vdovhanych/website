@@ -11,7 +11,9 @@ keywords:
     - apps
     - gettingstarted
 ---
-## Jump Right In
+## Basic steps to start developing.
+
+### Jump Right In
 
 _Start Developing iOS Apps (Swift)_  is the perfect starting point for learning to create apps that run on iPhone and iPad. View this set of incremental lessons as a guided introduction to building your first app—including the tools, major concepts, and best practices that will ease your path.
 
