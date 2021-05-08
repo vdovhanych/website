@@ -31,4 +31,7 @@ services:
       - HOMEBRIDGE_CONFIG_UI_PORT=8581
       - TZ=Canberra/Australia
     volumes:
-      - ./volumes/homebridge:/homebridge```
+      - ./volumes/homebridge:/homebridge
+```    
+
+TOTO Rest
