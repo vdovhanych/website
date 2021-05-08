@@ -45,7 +45,8 @@ weight = 4
 
   # Home page settings
   description = "Random stuff I'm interested in and feel it's worth writing about."
-  mainSection = "posts" # your main section
+  mainSectionTitle = "Latest posts"
+  mainSection = "posts" # your main section title page link
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = false # show tags overview by default.
