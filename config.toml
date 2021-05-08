@@ -39,14 +39,14 @@ weight = 4
 
 [params]
 
-  colortheme = "light" # dark, light, white, or classic
+  colortheme = "dark" # dark, light, white, or classic
   rss = false # generate rss feed. default value is false
   googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
 
   # Home page settings
   description = "Random stuff I'm interested in and feel it's worth writing about."
-  mainSectionTitle = "Latest posts"
   mainSection = "posts" # your main section title page link
+  mainSectionTitle = "Latest posts" # default is Writings, set any title you would like to display on top of posts on homepage.
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = false # show tags overview by default.
@@ -58,7 +58,7 @@ weight = 4
 
   # Post page settings
   show_updated = false # default
-  showReadTime = true # default
+  showReadTime = true # default is set to false
 
   [params.comments]
     enabled = false # default false
