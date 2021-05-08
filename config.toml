@@ -4,7 +4,7 @@ title = "DOVH"
 theme = "cactus"
 copyright = "vdovhanych" # cactus will use title if copyright is not set
 disqusShortname = "dovh" # Used when comments is enabled. Cactus will use site title if not set
-googleAnalytics = "G-ERN2XTZ1FG"
+# googleAnalytics = "G-ERN2XTZ1FG"
 # summaryLength = 2
 
 # Main menu which appears below site header.
