@@ -5,7 +5,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [GitLab CI](#gitlab-ci)
+- [Commit message example](#commit-message-example)
 - [Building locally](#building-locally)
+  - [Preview your site](#preview-your-site)
 - [Troubleshooting](#troubleshooting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -14,6 +16,14 @@
 
 This project's static Pages are built by [GitLab CI][ci], following the steps
 defined in [`.gitlab-ci.yml`](.gitlab-ci.yml).
+
+## Commit message example  
+Theme modifications: 
+feat(theme): what is new
+
+Content: 
+post(new): new post
+post(edit): edit to the already existed post (what changed)
 
 ## Building locally
 
