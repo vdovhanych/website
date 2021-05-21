@@ -4,13 +4,24 @@ image: registry.gitlab.com/pages/hugo:latest
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+# Run yamllint for all .yaml files in repository.
+yamllint:
+  stage: prebuild
+  image: registry.gitlab.com/pipeline-components/yamllint:latest
+  script:
+    - yamllint .
+
+# Run test with hugo script
 test:
+  stage: prebuild
   script:
   - hugo
   except:
   - master
 
-pages:
+# Build and publish hugo pages to prdocution
+build and publis pages:
+  staage: build
   script:
   - hugo
   artifacts:
