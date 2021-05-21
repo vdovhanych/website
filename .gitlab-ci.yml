@@ -5,15 +5,15 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 # Run yamllint for all .yaml files in repository.
-yamllint:
-  stage: prebuild
+yamllint check:
+  stage: test
   image: registry.gitlab.com/pipeline-components/yamllint:latest
   script:
     - yamllint .
 
 # Run test with hugo script
-test:
-  stage: prebuild
+hugo check:
+  stage: test
   script:
   - hugo
   except:
