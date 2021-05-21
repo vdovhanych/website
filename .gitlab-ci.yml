@@ -7,19 +7,19 @@ variables:
 # Run test with hugo script
 test:
   script:
-  - hugo
+    - hugo
   except:
-  - master
+    - master
 
 # Build and publish hugo pages to prdocution
 pages:
   script:
-  - hugo
+    - hugo
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
 
 # Run yamllint for all .yaml files in repository.
 yamllint:
