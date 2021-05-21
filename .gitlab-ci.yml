@@ -20,3 +20,10 @@ pages:
     - public
   only:
   - master
+
+# Run yamllint for all .yaml files in repository.
+yamllint:
+  stage: test
+  image: registry.gitlab.com/pipeline-components/yamllint:latest
+  script:
+    - yamllint .
