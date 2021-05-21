@@ -21,7 +21,7 @@ test:
 
 # Build and publish hugo pages to prdocution
 build and publis pages:
-  staage: build
+  stage: build
   script:
   - hugo
   artifacts:
