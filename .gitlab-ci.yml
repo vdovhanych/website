@@ -5,14 +5,14 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 # Run test with hugo script
-hugo test:
+test:
   script:
   - hugo
   except:
   - master
 
 # Build and publish hugo pages to prdocution
-build and publis pages:
+pages:
   script:
   - hugo
   artifacts:
