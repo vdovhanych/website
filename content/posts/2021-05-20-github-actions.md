@@ -1,5 +1,5 @@
 ---
-title: Automatic releases to GitHub
+title: GitHub Releases
 date: 2021-05-20 09:00:00
 tags:
     - github
