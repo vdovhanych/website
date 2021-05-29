@@ -17,13 +17,17 @@
 This project's static Pages are built by [GitLab CI][ci], following the steps
 defined in [`.gitlab-ci.yml`](.gitlab-ci.yml).
 
-## Commit message example  
-Theme modifications: 
-feat(theme): what is new
+## Commit message example
+Theme modifications:
+ - feat(theme): what is new
 
-Content: 
-post(new): new post
-post(edit): edit to the already existed post (what changed)
+Content:
+ - post(new): new post
+ -  post(edit): edit to the already existed post (what changed)
+
+Ci configuration:
+ - fix(ci) what is fixed or chagned.
+ - feat(ci) This is resevers for new features in the ci only.
 
 ## Building locally
 
