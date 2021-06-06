@@ -15,7 +15,7 @@ keywords:
 
 ### Homebridge instalation.
 
- Simple way to install it, is using docker and docker compose. 
+ Simple way to install it, is using docker and docker compose.
 
 ```docker
 version: '2'
@@ -32,6 +32,6 @@ services:
       - TZ=Canberra/Australia
     volumes:
       - ./volumes/homebridge:/homebridge
-```    
+```
 
-TODO 
+For more ways to install and for configuration options head to the official docs of HomeBridge [here](https://github.com/homebridge/homebridge/wiki).
