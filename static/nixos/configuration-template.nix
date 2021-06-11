@@ -57,6 +57,7 @@
     unzip
     vim
     wget
+    trezord
     # Desktop utilities
     bitwarden
     chromium
@@ -91,7 +92,7 @@
     # Python Trezor packages
     (python3.withPackages(ps: with ps; [ trezor trezor_agent ]))
     # Optional stuff
-    # spotify
+    spotify
     # steam
     # vscode
   ];
@@ -131,7 +132,7 @@
   };
 
   # Enable Trezor Bridge
-  services.trezord.enable = true;
+  # services.trezord.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -206,6 +207,6 @@
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
-  system.stateVersion = "20.03"; # Did you read the comment?
+  system.stateVersion = "21.05"; # Did you read the comment?
 
 }
