@@ -79,9 +79,9 @@
     vlc
     wine
     # Gnome specifics and utilities
-    gnome.evolution
-    gnome.gnome-tweaks
-    gnome.networkmanagerapplet
+    evolution
+    gnome-tweaks
+    networkmanagerapplet
     gnomeExtensions.dash-to-panel
     gnomeExtensions.dash-to-dock
     # KDE specifics and utilities
