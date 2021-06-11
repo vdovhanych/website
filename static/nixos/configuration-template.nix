@@ -80,7 +80,7 @@
     wine
     # Gnome specifics and utilities
     evolution
-    gnome-tweaks
+    gnome.gnome-tweaks
     networkmanagerapplet
     gnomeExtensions.dash-to-panel
     gnomeExtensions.dash-to-dock
