@@ -1,17 +1,9 @@
 [![deploy status](https://gitlab.com/vdovhanych/dovh.gitlab.io/badges/master/pipeline.svg)](https://gitlab.com/vdovhanych/dovh.gitlab.io/-/commits/master)
+[![Lint Code Base](https://github.com/vdovhanych/website/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+![GH Pages deploy](https://github.com/vdovhanych/website/actions/workflows/gh-pages.yml/badge.svg)
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [GitLab CI](#gitlab-ci)
-- [Commit message example](#commit-message-example)
-- [Building locally](#building-locally)
-  - [Preview your site](#preview-your-site)
-- [Troubleshooting](#troubleshooting)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
+## Github action - deploy to gh pages
+Using simple hugo extended script, defined in `gh-pages.yml`
 ## GitLab CI
 
 This project's static Pages are built by [GitLab CI][ci], following the steps
@@ -38,7 +30,6 @@ To work locally with this project, you'll have to follow the steps below:
 1. Preview your project: `hugo server`
 1. Add content
 
-
 Read more at Hugo's [documentation][].
 
 ### Preview your site
@@ -48,14 +39,6 @@ If you clone or download this project to your local computer and run `hugo serve
 your site can be accessed under `localhost:1313`.
 
 The theme used is adapted from https://github.com/monkeyWzr/hugo-theme-cactus.
-
-## Troubleshooting
-
-1. CSS is missing! That means two things:
-
-    Either that you have wrongly set up the CSS URL in your templates, or
-    your static generator has a configuration option that needs to be explicitly
-    set in order to serve static assets under a relative URL.
 
 [ci]: https://about.gitlab.com/gitlab-ci/
 [hugo]: https://gohugo.io
