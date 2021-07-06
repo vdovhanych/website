@@ -76,3 +76,7 @@ weight = 4
   [[params.social]]
     name = "email"
     link = "vitalij@dovh.cz"  # no need for "mailto:" in the head
+  [[params.social]]
+    name = "key"
+    link = "https://dovh.cz/gpg/gpg.asc"
+
