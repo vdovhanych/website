@@ -1,4 +1,4 @@
-name: "GitHub Pages DOVH.cz :octocat:"
+name: GitHub Pages 🔖
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master  # Set a branch to deploy
 
 jobs:
-  build and deploy:
+  build_and_deploy:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
