@@ -1,13 +1,12 @@
-name: 🔎 deploy github pages
+name: "GitHub Pages DOVH.cz :octocat:"
 
 on:
   push:
     branches:
       - master  # Set a branch to deploy
-  pull_request:
 
 jobs:
-  deploy:
+  build and deploy:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -22,7 +21,7 @@ jobs:
           extended: true
 
       - name: 🏗️ Build
-        run: hugo --minify --baseURL https://pages.dovh.cz/
+        run: hugo --minify
 
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v3
