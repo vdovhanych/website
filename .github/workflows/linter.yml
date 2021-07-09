@@ -1,5 +1,5 @@
 ## Linter GitHub Actions
-name: Lint Code Base
+name: "Lint Code Base 🔍  "
 
 # Documentation:
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions
