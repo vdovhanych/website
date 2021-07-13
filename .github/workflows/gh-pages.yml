@@ -7,6 +7,7 @@ on:
 
 jobs:
   build_and_deploy:
+    name: "GitHub Pages 🏗️ & 🚀 "
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
