@@ -5,7 +5,6 @@ rules:
   truthy:
     allowed-values: ['true', 'false', 'on']
   line-length: disable
-  # skip "---" at the beginning
   document-start: disable
   comments-indentation: disable
   indentation:
