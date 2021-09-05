@@ -12,12 +12,12 @@
         {{ .Title }}
       </h1>
       <div class="meta">
-        {{ if (or (.Site.Author) (.Site.Title))}}
+        {{ if (or (isset .Site "author") (isset .Site "title"))}}
         <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span itemprop="name">
-            {{ if .Site.Author }}
+            {{ if isset .Site "author" }}
               {{ .Site.Author }}
-              {{ else if .Site.Title }}
+            {{ else if isset .Site "title" }}
               {{ .Site.Title }}
             {{ end }}
           </span>
@@ -68,6 +68,11 @@
       {{ end }}
     </div>
   {{ end }}
+    {{ if .Site.Params.tocInline }}
+    <div id="toc">
+      {{ .TableOfContents }}
+    </div>
+    {{ end }}
     <div class="content" itemprop="articleBody">
       {{ .Content}}
     </div>
@@ -85,7 +90,9 @@
 <link rel="stylesheet" href={{ "/lib/font-awesome/css/all.min.css" | relURL }}>
 <script src={{ "/lib/jquery/jquery.min.js" | relURL }}></script>
 <script src={{ "/js/main.js" | relURL }}></script>
+{{ if not (isset site.Params "disablecopy") }}
 <script src={{ "js/code-copy.js"  | relURL }}></script>
+{{ end }}
 {{ $mathjax := false }}
 {{ if isset .Params "mathjax" }}
   {{ $mathjax = .Params.mathjax }}
