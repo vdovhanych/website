@@ -28,7 +28,7 @@ name = "Topics"
 url = "/tags"
 weight = 4
 
-
+# Code highlighting
 [markup]
   [markup.tableOfContents]
     endLevel = 4
@@ -69,9 +69,11 @@ weight = 4
   show_updated = false # default
   showReadTime = true # default is set to false
 
+  # Comments settings
   [params.comments]
     enabled = false # default false
     engine = "cactus_comments" # only disqus, utterances, and cactus_comments is supported
+
     [params.comments.utterances]
       repo = "<github_username>/<github_reponame>"
       label = "hugo-site-name" # you can use however you want to label your name in your repo's issues
@@ -80,8 +82,10 @@ weight = 4
       siteName = "your_cactus_comments_sitename" # see https://cactus.chat/ on how to register your site name
       #serverUrl = "" # Defaults to https://matrix.cactus.chat:8448 (Cactus Chat public server)
       #serverName = "" # Defaults to cactus.chat
-  # the value of name should be an valid font awesome icon name (brands type)
-  # https://fontawesome.com/icons?d=gallery&s=brands
+
+  # Main page social links
+  ## the value of name should be an valid font awesome icon name (brands type)
+  ## https://fontawesome.com/icons?d=gallery&s=brands
   [[params.social]]
     name = "github"
     link = "https://github.com/vdovhanych"
