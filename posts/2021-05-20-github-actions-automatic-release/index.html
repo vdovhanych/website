@@ -4,6 +4,8 @@
 <link rel=preload href=/lib/font-awesome/webfonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin=anonymous>
 <link rel=preload href=/lib/font-awesome/webfonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin=anonymous>
 <link rel=preload href=/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2 as=font type=font/woff2 crossorigin=anonymous>
+<script type=text/javascript src=https://latest.cactus.chat/cactus.js></script>
+<link rel=stylesheet href=https://latest.cactus.chat/style.css type=text/css>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <title> Automatic release drafting to Github Releases | DOVH</title>
@@ -133,11 +135,6 @@
 Automatic release drafting to Github Releases
 </h1>
 <div class=meta>
-<span class=author itemprop=author itemscope itemtype=http://schema.org/Person>
-<span itemprop=name>
-DOVH
-</span>
-</span>
 <div class=postdate>
 <time datetime="2021-05-20 09:00:00 +0000 UTC" itemprop=datePublished>2021-05-20</time>
 </div>
@@ -158,57 +155,57 @@ DOVH
 <div class=content itemprop=articleBody>
 <h2 id=generate-draft-release-on-github-with-github-actions>Generate draft release on GitHub with GitHub Actions</h2>
 <p>I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker. This was a huge help with setting up our CI to create drafted releases directly to GitHub Release page.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Release</span>
-
-<span style=color:#f92672>on</span>:
-  <span style=color:#f92672>push</span>:
-    <span style=color:#f92672>branches</span>:
-      - <span style=color:#ae81ff>master</span>
-
-<span style=color:#f92672>jobs</span>:
-  <span style=color:#f92672>main</span>:
-    <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Draft Release</span>
-    <span style=color:#f92672>runs-on</span>: <span style=color:#ae81ff>ubuntu-latest</span>
-
-    <span style=color:#f92672>steps</span>:
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Checkout</span>
-        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/checkout@v1</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Use Node v12</span>
-        <span style=color:#f92672>uses</span>: <span style=color:#ae81ff>actions/setup-node@v1</span>
-        <span style=color:#f92672>with</span>:
-          <span style=color:#f92672>node-version</span>: <span style=color:#ae81ff>12</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Install dependencies</span>
-        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm ci</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Double check unit tests</span>
-        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm test</span>
-        <span style=color:#f92672>env</span>:
-          <span style=color:#f92672>CI</span>: <span style=color:#66d9ef>true</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Double check integration tests</span>
-        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm run integrate</span>
-        <span style=color:#f92672>env</span>:
-          <span style=color:#f92672>CI</span>: <span style=color:#66d9ef>true</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build package</span>
-        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npm run build</span>
-
-      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Publish new version to GitHub Release</span>
-        <span style=color:#f92672>env</span>:
-          <span style=color:#f92672>GITHUB_TOKEN</span>: <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
-        <span style=color:#f92672>run</span>: <span style=color:#ae81ff>npx semantic-release</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#ff79c6>name</span>: Release
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span style=color:#ff79c6>on</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>  <span style=color:#ff79c6>push</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span>    <span style=color:#ff79c6>branches</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>      - master
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span style=color:#ff79c6>jobs</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>  <span style=color:#ff79c6>main</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>    <span style=color:#ff79c6>name</span>: Draft Release
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span>    <span style=color:#ff79c6>runs-on</span>: ubuntu-latest
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>    <span style=color:#ff79c6>steps</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span>      - <span style=color:#ff79c6>name</span>: Checkout
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span>        <span style=color:#ff79c6>uses</span>: actions/checkout@v1
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span>      - <span style=color:#ff79c6>name</span>: Use Node v12
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span>        <span style=color:#ff79c6>uses</span>: actions/setup-node@v1
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span>        <span style=color:#ff79c6>with</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span>          <span style=color:#ff79c6>node-version</span>: <span style=color:#bd93f9>12</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span>      - <span style=color:#ff79c6>name</span>: Install dependencies
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23</span>        <span style=color:#ff79c6>run</span>: npm ci
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25</span>      - <span style=color:#ff79c6>name</span>: Double check unit tests
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26</span>        <span style=color:#ff79c6>run</span>: npm test
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27</span>        <span style=color:#ff79c6>env</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28</span>          <span style=color:#ff79c6>CI</span>: <span style=color:#ff79c6>true</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30</span>      - <span style=color:#ff79c6>name</span>: Double check integration tests
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31</span>        <span style=color:#ff79c6>run</span>: npm run integrate
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32</span>        <span style=color:#ff79c6>env</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33</span>          <span style=color:#ff79c6>CI</span>: <span style=color:#ff79c6>true</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35</span>      - <span style=color:#ff79c6>name</span>: Build package
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36</span>        <span style=color:#ff79c6>run</span>: npm run build
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38</span>      - <span style=color:#ff79c6>name</span>: Publish new version to GitHub Release
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39</span>        <span style=color:#ff79c6>env</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">40</span>          <span style=color:#ff79c6>GITHUB_TOKEN</span>: ${{ secrets.GITHUB_TOKEN }}
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">41</span>        <span style=color:#ff79c6>run</span>: npx semantic-release
 </code></pre></div><p>If you take a look at that workflow, you can see at the bottom that he’s using the npx command to leverage semantic-release directly with its CLI. GitHub Actions workflows allow you to run set runner environments and run shell commands. That solves the one problem, but I’m a big fan of actually automating my changelog as well.</p>
 <p>I leverage actions to generate my release notes for projects. I discovered that it provides a changelog and bumps the version number in package.json file.</p>
 <h3 id=do-the-github-release-from-gitlab-ci-pipline>Do the Github release from Gitlab CI pipline.</h3>
 <p>We can also use a lot simpler and more universal solution if we go with GitHub Cli tool. For this, to work we will need to create a base Docker image where this job of ours will run. You will also need to set GitlabCI environment variable &ldquo;GITHUB_TOKEN&rdquo; with your private token with access to full <code>repo:</code> and <code>org:read</code></p>
 <p>After this, you should be able to run the job and it will create a draft of your release. If you want to attach any files to the release simply specify the path at the end of &ldquo;gh release&rdquo; line with <code>./</code> if stored in your repository root folder.</p>
 <p>Gitlab CI example job.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>script</span>:
-    - <span style=color:#ae81ff>gh config set prompt disabled</span>
-    - <span style=color:#ae81ff>VERSION=$(jq -r .version path/to_your_version_file/package.json)</span>
-    - <span style=color:#ae81ff>gh release create --repo OWNER/PROJECTNAME --draft v${VERSION}  --title &#34;v${VERSION}&#34;</span>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span style=color:#ff79c6>script</span>:
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span>    - gh config set prompt disabled
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span>    - VERSION=$(jq -r .version path/to_your_version_file/package.json)
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span>    - gh release create --repo OWNER/PROJECTNAME --draft v${VERSION}  --title &#34;v${VERSION}&#34;
 </code></pre></div><p>Tool needed inside dokcer file are <a href=https://stedolan.github.io/jq/>jq</a> and <a href=https://cli.github.com/>GIthubCLI</a></p>
 </div>
 </article>
