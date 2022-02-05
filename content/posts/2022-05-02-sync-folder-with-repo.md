@@ -1,6 +1,6 @@
 ---
 title: Synchronize subdirectory to a repository with git filter repo
-date: 2022-05-02 09:00:00
+date: 2022-02-04 09:00:00
 tags:
     - github
     - automation
