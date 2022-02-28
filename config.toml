@@ -28,6 +28,11 @@ name = "Topics"
 url = "/tags"
 weight = 4
 
+[[menu.main]]
+name = "Help Ukraine"
+url = "/help_ukraine"
+weight = 5
+
 # Code highlighting
 [markup]
   [markup.tableOfContents]
