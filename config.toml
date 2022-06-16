@@ -102,4 +102,4 @@ weight = 5
     link = "https://linkedin.com/in/vitalij-dovhanyc"
   [[params.social]]
     name = "email"
-    link = "vitalij@dovh.cz"  # no need for "mailto:" in the head
+    link = "vitalij@dovh.io"  # no need for "mailto:" in the head
