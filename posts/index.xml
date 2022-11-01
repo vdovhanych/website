@@ -1,6 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on DOVH</title><link>https://dovh.io/posts/</link><description>Recent content in Posts on DOVH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>dovh</copyright><lastBuildDate>Fri, 04 Feb 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Synchronize subdirectory to a repository with git filter repo</title><link>https://dovh.io/posts/2022-05-02-sync-folder-with-repo/</link><pubDate>Fri, 04 Feb 2022 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2022-05-02-sync-folder-with-repo/</guid><description>Synchronize subdirectory to a repository using git filter-repo.</description></item><item><title>Automatic release drafting to Github Releases</title><link>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</link><pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</guid><description>Generate draft release on GitHub with GitHub Actions I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker.</description></item><item><title>Docker image with buildx inside</title><link>https://dovh.io/posts/2021-11-26-docker-with-buildx/</link><pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2021-11-26-docker-with-buildx/</guid><description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
-GitHub Repo</description></item><item><title>GitHub Actions</title><link>https://dovh.io/posts/2021-05-20-github-actions-basics/</link><pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2021-05-20-github-actions-basics/</guid><description>GitHub Actions and Workflows Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on DOVH</title>
+    <link>https://dovh.io/posts/</link>
+    <description>Recent content in Posts on DOVH</description>
+    <image>
+      <url>https://dovh.io/img/logo.png</url>
+      <link>https://dovh.io/img/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 04 Feb 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synchronize subdirectory to a repository with git filter repo</title>
+      <link>https://dovh.io/posts/2022-05-02-sync-folder-with-repo/</link>
+      <pubDate>Fri, 04 Feb 2022 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2022-05-02-sync-folder-with-repo/</guid>
+      <description>Synchronize subdirectory to a repository using git filter-repo. </description>
+    </item>
+    
+    <item>
+      <title>Automatic release drafting to Github Releases</title>
+      <link>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</link>
+      <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</guid>
+      <description>Generate draft release on GitHub with GitHub Actions I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker.</description>
+    </item>
+    
+    <item>
+      <title>Docker image with buildx inside</title>
+      <link>https://dovh.io/posts/2021-11-26-docker-with-buildx/</link>
+      <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2021-11-26-docker-with-buildx/</guid>
+      <description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
+GitHub Repo</description>
+    </item>
+    
+    <item>
+      <title>GitHub Actions</title>
+      <link>https://dovh.io/posts/2021-05-20-github-actions-basics/</link>
+      <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2021-05-20-github-actions-basics/</guid>
+      <description>GitHub Actions and Workflows Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.
 This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
-Why care about Github Actions? Before we get into the technical detail let&amp;rsquo;s discussed why developers should care about Github Actions in the first place and which benefits they provide.</description></item><item><title>HomeBridge setup</title><link>https://dovh.io/posts/2021-04-11-homebridge-setup/</link><pubDate>Sun, 11 Apr 2021 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2021-04-11-homebridge-setup/</guid><description>HomeBridge setup and supported accessories. Homebridge instalation. Simple way to install it, is using docker and docker compose.
-1version: &amp;#39;2&amp;#39; 2services: 3 homebridge: 4 image: oznu/homebridge:ubuntu 5 restart: always 6 network_mode: host 7 environment: 8 - PGID=1000 9 - PUID=1000 10 - HOMEBRIDGE_CONFIG_UI=1 11 - HOMEBRIDGE_CONFIG_UI_PORT=8581 12 - TZ=Canberra/Australia 13 volumes: 14 - ./volumes/homebridge:/homebridge For more ways to install and for configuration options head to the official docs of HomeBridge here.</description></item><item><title>Getting Started with iOS App</title><link>https://dovh.io/posts/2021-04-05-gettingstartedios/</link><pubDate>Sun, 04 Apr 2021 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2021-04-05-gettingstartedios/</guid><description>Basic steps to start developing. Jump Right In Start Developing iOS Apps (Swift) is the perfect starting point for learning to create apps that run on iPhone and iPad. View this set of incremental lessons as a guided introduction to building your first app—including the tools, major concepts, and best practices that will ease your path.
-Each lesson contains a tutorial and the conceptual information you need to complete it. The lessons build on each other, walking you through a step-by-step process of creating a simple, real-world iOS app.</description></item><item><title>Automated Plex setup on Synology nas</title><link>https://dovh.io/posts/2021-03-26-synology-and-plex/</link><pubDate>Fri, 26 Mar 2021 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2021-03-26-synology-and-plex/</guid><description>Plex install and setup TO DO</description></item><item><title>Randomizer3 iPhone App</title><link>https://dovh.io/posts/2021-01-12-randomizer3/</link><pubDate>Tue, 12 Jan 2021 09:00:00 +0000</pubDate><guid>https://dovh.io/posts/2021-01-12-randomizer3/</guid><description>Simple app that generates random Dota 2 heroes and also tasty food. Randomizer3 on Github</description></item></channel></rss>
+Why care about Github Actions? Before we get into the technical detail let&amp;rsquo;s discussed why developers should care about Github Actions in the first place and which benefits they provide.</description>
+    </item>
+    
+    <item>
+      <title>HomeBridge setup</title>
+      <link>https://dovh.io/posts/2021-04-11-homebridge-setup/</link>
+      <pubDate>Sun, 11 Apr 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2021-04-11-homebridge-setup/</guid>
+      <description>HomeBridge setup and supported accessories. Homebridge instalation. Simple way to install it, is using docker and docker compose.
+version: &amp;#39;2&amp;#39; services: homebridge: image: oznu/homebridge:ubuntu restart: always network_mode: host environment: - PGID=1000 - PUID=1000 - HOMEBRIDGE_CONFIG_UI=1 - HOMEBRIDGE_CONFIG_UI_PORT=8581 - TZ=Canberra/Australia volumes: - ./volumes/homebridge:/homebridge For more ways to install and for configuration options head to the official docs of HomeBridge here.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with iOS App</title>
+      <link>https://dovh.io/posts/2021-04-05-gettingstartedios/</link>
+      <pubDate>Sun, 04 Apr 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2021-04-05-gettingstartedios/</guid>
+      <description>Basic steps to start developing. Jump Right In Start Developing iOS Apps (Swift) is the perfect starting point for learning to create apps that run on iPhone and iPad. View this set of incremental lessons as a guided introduction to building your first app—including the tools, major concepts, and best practices that will ease your path.
+Each lesson contains a tutorial and the conceptual information you need to complete it. The lessons build on each other, walking you through a step-by-step process of creating a simple, real-world iOS app.</description>
+    </item>
+    
+    <item>
+      <title>Automated Plex setup on Synology nas</title>
+      <link>https://dovh.io/posts/2021-03-26-synology-and-plex/</link>
+      <pubDate>Fri, 26 Mar 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2021-03-26-synology-and-plex/</guid>
+      <description>Plex install and setup TO DO</description>
+    </item>
+    
+    <item>
+      <title>Randomizer3 iPhone App</title>
+      <link>https://dovh.io/posts/2021-01-12-randomizer3/</link>
+      <pubDate>Tue, 12 Jan 2021 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2021-01-12-randomizer3/</guid>
+      <description>Simple app that generates random Dota 2 heroes and also tasty food. Randomizer3 on Github</description>
+    </item>
+    
+  </channel>
+</rss>
