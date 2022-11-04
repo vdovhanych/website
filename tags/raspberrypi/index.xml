@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>raspberrypi on DOVH</title>
+    <link>https://dovh.io/tags/raspberrypi/</link>
+    <description>Recent content in raspberrypi on DOVH</description>
+    <image>
+      <url>https://dovh.io/img/logo.png</url>
+      <link>https://dovh.io/img/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Oct 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi 4 Kubernetes cluster</title>
+      <link>https://dovh.io/posts/2022-10-04-pi-cluster/</link>
+      <pubDate>Tue, 04 Oct 2022 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2022-10-04-pi-cluster/</guid>
+      <description>Installation Prepare the image for Raspberry Pi Download Pi imager
+Setup each nodes SD card
+k3s Install To install k3s on Raspberry pi-cluster i have used awesome opensource project k3s-ansible
+Follow the instructions on how to install k3s in the projects readme.</description>
+    </item>
+    
+  </channel>
+</rss>

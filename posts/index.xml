@@ -9,14 +9,27 @@
       <link>https://dovh.io/img/logo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 04 Feb 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Oct 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Synchronize subdirectory to a repository with git filter repo</title>
-      <link>https://dovh.io/posts/2022-05-02-sync-folder-with-repo/</link>
-      <pubDate>Fri, 04 Feb 2022 09:00:00 +0000</pubDate>
+      <title>Raspberry Pi 4 Kubernetes cluster</title>
+      <link>https://dovh.io/posts/2022-10-04-pi-cluster/</link>
+      <pubDate>Tue, 04 Oct 2022 09:00:00 +0000</pubDate>
       
-      <guid>https://dovh.io/posts/2022-05-02-sync-folder-with-repo/</guid>
-      <description>Synchronize subdirectory to a repository using git filter-repo. </description>
+      <guid>https://dovh.io/posts/2022-10-04-pi-cluster/</guid>
+      <description>Installation Prepare the image for Raspberry Pi Download Pi imager
+Setup each nodes SD card
+k3s Install To install k3s on Raspberry pi-cluster i have used awesome opensource project k3s-ansible
+Follow the instructions on how to install k3s in the projects readme.</description>
+    </item>
+    
+    <item>
+      <title>Docker image with buildx inside</title>
+      <link>https://dovh.io/posts/2022-05-26-docker-with-buildx/</link>
+      <pubDate>Thu, 26 May 2022 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2022-05-26-docker-with-buildx/</guid>
+      <description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
+GitHub Repo</description>
     </item>
     
     <item>
@@ -26,16 +39,6 @@
       
       <guid>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</guid>
       <description>Generate draft release on GitHub with GitHub Actions I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker.</description>
-    </item>
-    
-    <item>
-      <title>Docker image with buildx inside</title>
-      <link>https://dovh.io/posts/2021-11-26-docker-with-buildx/</link>
-      <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
-      
-      <guid>https://dovh.io/posts/2021-11-26-docker-with-buildx/</guid>
-      <description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
-GitHub Repo</description>
     </item>
     
     <item>
