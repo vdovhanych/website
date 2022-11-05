@@ -9,7 +9,14 @@ keywords:
     - HomeKit
     - homebridge
     - unsupported HomeKit
+cover:
+    image: "posts/images/homebridge.jpg" # image path/url
+    alt: "" # alt text
+    caption: "[homebridge/homebridge](https://github.com/homebridge/homebridge)" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: false # only hide on current single page
 ---
+
 ## HomeBridge setup and supported accessories.
 
 
