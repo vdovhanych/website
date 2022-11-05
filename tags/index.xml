@@ -82,23 +82,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>plex</title>
-      <link>https://dovh.io/tags/plex/</link>
-      <pubDate>Fri, 26 Mar 2021 09:00:00 +0000</pubDate>
-      
-      <guid>https://dovh.io/tags/plex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>synology</title>
-      <link>https://dovh.io/tags/synology/</link>
-      <pubDate>Fri, 26 Mar 2021 09:00:00 +0000</pubDate>
-      
-      <guid>https://dovh.io/tags/synology/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
