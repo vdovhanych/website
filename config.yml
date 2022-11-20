@@ -41,7 +41,7 @@ params:
   tocopen: false
 
   assets:
-    # disableHLJS: true # to disable highlight.js
+    disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "/img/favicon.ico"
     favicon16x16: "/img/favicon.ico"
@@ -111,9 +111,5 @@ menu:
 
 markup:
   highlight:
-    # anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    lineNos: false
-    # noClasses: false
+    noClasses: false
     style: dracula

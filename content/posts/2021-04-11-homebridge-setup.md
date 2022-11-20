@@ -24,7 +24,7 @@ cover:
 
  Simple way to install it, is using docker and docker compose.
 
-```docker
+```yml
 version: '2'
 services:
   homebridge:
