@@ -106,7 +106,7 @@ menu:
       weight: 50
     - identifier: help_ukraine
       name: Help Ukraine
-      url: /help_ukraine
+      url: https://u24.gov.ua/
       weight: 60
 
 markup:
