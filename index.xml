@@ -33,15 +33,6 @@ GitHub Repo</description>
     </item>
     
     <item>
-      <title>Help Ukraine</title>
-      <link>https://dovh.io/help_ukraine/</link>
-      <pubDate>Thu, 24 Feb 2022 17:51:42 +0000</pubDate>
-      
-      <guid>https://dovh.io/help_ukraine/</guid>
-      <description>Some of the links on which you can look for ways to help. How to help people in Ukraine - HERE Offer accommodations for people fleeing from Ukraine - HERE </description>
-    </item>
-    
-    <item>
       <title>Automatic release drafting to Github Releases</title>
       <link>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</link>
       <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
