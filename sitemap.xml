@@ -70,5 +70,13 @@
   </url><url>
     <loc>https://dovh.io/about/</loc>
     <lastmod>2020-03-25T17:51:42+00:00</lastmod>
+  </url><url>
+    <loc>https://dovh.io/tags/cloudfare/</loc>
+  </url><url>
+    <loc>https://dovh.io/tags/dns/</loc>
+  </url><url>
+    <loc>https://dovh.io/tags/terraform/</loc>
+  </url><url>
+    <loc>https://dovh.io/posts/2023-25-04-terraform-dns-cloudflare/</loc>
   </url>
 </urlset>

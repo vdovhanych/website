@@ -82,5 +82,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>cloudfare</title>
+      <link>https://dovh.io/tags/cloudfare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/tags/cloudfare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dns</title>
+      <link>https://dovh.io/tags/dns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>terraform</title>
+      <link>https://dovh.io/tags/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/tags/terraform/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

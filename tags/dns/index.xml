@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>dns on DOVH</title>
+    <link>https://dovh.io/tags/dns/</link>
+    <description>Recent content in dns on DOVH</description>
+    <image>
+      <url>https://dovh.io/img/logo.png</url>
+      <link>https://dovh.io/img/logo.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://dovh.io/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Terraform DNS Cloudflare</title>
+      <link>https://dovh.io/posts/2023-25-04-terraform-dns-cloudflare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2023-25-04-terraform-dns-cloudflare/</guid>
+      <description>Terraform DNS Cloudflare Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.
+A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create. Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.</description>
+    </item>
+    
+  </channel>
+</rss>
