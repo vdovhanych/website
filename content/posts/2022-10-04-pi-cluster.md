@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi 4 Kubernetes cluster"
-date: 2022-10-04 09:00:00
+date: 2022-04-10 09:00:00
 tags:
     - raspberrypi
     - k3s

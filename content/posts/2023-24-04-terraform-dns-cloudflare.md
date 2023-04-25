@@ -1,6 +1,6 @@
 ---
 title: "Terraform DNS Cloudflare"
-date: 2023-24-04 09:00:00
+date: 2023-04-24 09:00:00
 tags:
     - terraform
     - dns
