@@ -8,11 +8,12 @@
       <url>https://dovh.io/img/logo.png</url>
       <link>https://dovh.io/img/logo.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://dovh.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terraform DNS Cloudflare</title>
       <link>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Apr 2023 09:00:00 +0000</pubDate>
       
       <guid>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</guid>
       <description>Terraform DNS Cloudflare Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.

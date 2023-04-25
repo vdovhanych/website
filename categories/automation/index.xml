@@ -9,17 +9,15 @@
       <link>https://dovh.io/img/logo.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 04 Oct 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/categories/automation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/categories/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Raspberry Pi 4 Kubernetes cluster</title>
-      <link>https://dovh.io/posts/2022-10-04-pi-cluster/</link>
-      <pubDate>Tue, 04 Oct 2022 09:00:00 +0000</pubDate>
+      <title>Terraform DNS Cloudflare</title>
+      <link>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</link>
+      <pubDate>Mon, 24 Apr 2023 09:00:00 +0000</pubDate>
       
-      <guid>https://dovh.io/posts/2022-10-04-pi-cluster/</guid>
-      <description>Installation Prepare the image for Raspberry Pi Download Pi imager
-Setup each nodes SD card
-k3s Install To install k3s on Raspberry pi-cluster i have used awesome opensource project k3s-ansible
-Follow the instructions on how to install k3s in the projects readme.</description>
+      <guid>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</guid>
+      <description>Terraform DNS Cloudflare Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.
+A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create. Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.</description>
     </item>
     
     <item>
@@ -30,6 +28,18 @@ Follow the instructions on how to install k3s in the projects readme.</descripti
       <guid>https://dovh.io/posts/2022-05-26-docker-with-buildx/</guid>
       <description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
 GitHub Repo</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi 4 Kubernetes cluster</title>
+      <link>https://dovh.io/posts/2022-10-04-pi-cluster/</link>
+      <pubDate>Sun, 10 Apr 2022 09:00:00 +0000</pubDate>
+      
+      <guid>https://dovh.io/posts/2022-10-04-pi-cluster/</guid>
+      <description>Installation Prepare the image for Raspberry Pi Download Pi imager
+Setup each nodes SD card
+k3s Install To install k3s on Raspberry pi-cluster i have used awesome opensource project k3s-ansible
+Follow the instructions on how to install k3s in the projects readme.</description>
     </item>
     
     <item>
@@ -50,16 +60,6 @@ GitHub Repo</description>
       <description>GitHub Actions and Workflows Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.
 This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
 Why care about Github Actions? Before we get into the technical detail let&amp;rsquo;s discussed why developers should care about Github Actions in the first place and which benefits they provide.</description>
-    </item>
-    
-    <item>
-      <title>Terraform DNS Cloudflare</title>
-      <link>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</guid>
-      <description>Terraform DNS Cloudflare Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.
-A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create. Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.</description>
     </item>
     
   </channel>
