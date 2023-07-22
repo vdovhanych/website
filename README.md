@@ -1,4 +1,3 @@
-[![Lint Code Base](https://github.com/vdovhanych/website/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 ![GH Pages deploy](https://github.com/vdovhanych/website/actions/workflows/gh-pages.yml/badge.svg)
 
 ## Github action - deploy to gh pages
