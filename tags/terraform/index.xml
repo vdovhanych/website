@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>terraform on DOVH</title>
+    <title>Terraform on DOVH</title>
     <link>https://dovh.io/tags/terraform/</link>
-    <description>Recent content in terraform on DOVH</description>
+    <description>Recent content in Terraform on DOVH</description>
     <image>
       <title>DOVH</title>
       <url>https://dovh.io/img/logo.png</url>
       <link>https://dovh.io/img/logo.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dovh.io/tags/terraform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terraform DNS Cloudflare</title>
       <link>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</link>
       <pubDate>Mon, 24 Apr 2023 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</guid>
-      <description>Terraform DNS Cloudflare Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.
-A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create. Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.</description>
+      <description>&lt;h1 id=&#34;terraform-dns-cloudflare&#34;&gt;Terraform DNS Cloudflare&lt;/h1&gt;
+&lt;p&gt;Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.&lt;/p&gt;
+&lt;p&gt;A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create.
+Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.
+Terraform also provides version control for DNS records and easy rollback capability. Overall, Terraform and Cloudflare together offer a powerful, scalable solution for managing DNS records as code.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

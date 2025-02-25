@@ -1,68 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>automation on DOVH</title>
+    <title>Automation on DOVH</title>
     <link>https://dovh.io/categories/automation/</link>
-    <description>Recent content in automation on DOVH</description>
+    <description>Recent content in Automation on DOVH</description>
     <image>
       <title>DOVH</title>
       <url>https://dovh.io/img/logo.png</url>
       <link>https://dovh.io/img/logo.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/categories/automation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dovh.io/categories/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terraform DNS Cloudflare</title>
       <link>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</link>
       <pubDate>Mon, 24 Apr 2023 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</guid>
-      <description>Terraform DNS Cloudflare Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.
-A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create. Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.</description>
+      <description>&lt;h1 id=&#34;terraform-dns-cloudflare&#34;&gt;Terraform DNS Cloudflare&lt;/h1&gt;
+&lt;p&gt;Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.&lt;/p&gt;
+&lt;p&gt;A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create.
+Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.
+Terraform also provides version control for DNS records and easy rollback capability. Overall, Terraform and Cloudflare together offer a powerful, scalable solution for managing DNS records as code.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Docker image with buildx inside</title>
       <link>https://dovh.io/posts/2022-05-26-docker-with-buildx/</link>
       <pubDate>Thu, 26 May 2022 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2022-05-26-docker-with-buildx/</guid>
-      <description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
-GitHub Repo</description>
+      <description>&lt;h2 id=&#34;base-docker-image-with-buildx&#34;&gt;Base docker image with buildx&lt;/h2&gt;
+&lt;p&gt;Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vdovhanych/docker-and-buildx&#34;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Raspberry Pi 4 Kubernetes cluster</title>
       <link>https://dovh.io/posts/2022-10-04-pi-cluster/</link>
       <pubDate>Sun, 10 Apr 2022 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2022-10-04-pi-cluster/</guid>
-      <description>Installation Prepare the image for Raspberry Pi Download Pi imager
-Setup each nodes SD card
-k3s Install To install k3s on Raspberry pi-cluster i have used awesome opensource project k3s-ansible
-Follow the instructions on how to install k3s in the projects readme.</description>
+      <description>&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&#34;prepare-the-image-for-raspberry-pi&#34;&gt;Prepare the image for Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;Download &lt;a href=&#34;https://www.raspberrypi.com/software/&#34;&gt;Pi imager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Setup each nodes SD card&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pi-imager1&#34; loading=&#34;lazy&#34; src=&#34;https://dovh.io/posts/images/pi-cluster/pi-imager-os.png&#34;&gt;
+&lt;img alt=&#34;pi-imager2&#34; loading=&#34;lazy&#34; src=&#34;https://dovh.io/posts/images/pi-cluster/pi-imager-settings.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;k3s-install&#34;&gt;k3s Install&lt;/h2&gt;
+&lt;p&gt;To install k3s on Raspberry pi-cluster i have used awesome opensource project
+&lt;img alt=&#34;k3s-ansible-cover&#34; loading=&#34;lazy&#34; src=&#34;https://camo.githubusercontent.com/1d58775f8b90fa83b237600ddc6112cad2e93e912d4b6b754e991a036631aa64/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f43626b455763555a377a4d2f302e6a7067&#34;&gt;
+&lt;a href=&#34;https://github.com/techno-tim/k3s-ansible&#34;&gt;k3s-ansible&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Follow the instructions on how to install k3s in the projects readme.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Automatic release drafting to Github Releases</title>
       <link>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</link>
       <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</guid>
-      <description>Generate draft release on GitHub with GitHub Actions I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker.</description>
+      <description>&lt;h2 id=&#34;generate-draft-release-on-github-with-github-actions&#34;&gt;Generate draft release on GitHub with GitHub Actions&lt;/h2&gt;
+&lt;p&gt;I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker. This was a huge help with setting up our CI to create drafted releases directly to GitHub Release page.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GitHub Actions</title>
       <link>https://dovh.io/posts/2021-05-20-github-actions-basics/</link>
       <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2021-05-20-github-actions-basics/</guid>
-      <description>GitHub Actions and Workflows Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.
-This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
-Why care about Github Actions? Before we get into the technical detail let&amp;rsquo;s discussed why developers should care about Github Actions in the first place and which benefits they provide.</description>
+      <description>&lt;h2 id=&#34;github-actions-and-workflows&#34;&gt;GitHub Actions and Workflows&lt;/h2&gt;
+&lt;p&gt;Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.&lt;/p&gt;
+&lt;p&gt;This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.&lt;/p&gt;
+&lt;h3 id=&#34;why-care-about-github-actions&#34;&gt;Why care about Github Actions?&lt;/h3&gt;
+&lt;p&gt;Before we get into the technical detail let&amp;rsquo;s discussed why developers should care about Github Actions in the first place and which benefits they provide.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

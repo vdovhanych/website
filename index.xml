@@ -9,100 +9,123 @@
       <url>https://dovh.io/img/logo.png</url>
       <link>https://dovh.io/img/logo.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Apr 2023 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dovh.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terraform DNS Cloudflare</title>
       <link>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</link>
       <pubDate>Mon, 24 Apr 2023 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2023-24-04-terraform-dns-cloudflare/</guid>
-      <description>Terraform DNS Cloudflare Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.
-A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create. Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.</description>
+      <description>&lt;h1 id=&#34;terraform-dns-cloudflare&#34;&gt;Terraform DNS Cloudflare&lt;/h1&gt;
+&lt;p&gt;Terraform automates Cloudflare DNS record creation and management, saving time and reducing errors for large domains.&lt;/p&gt;
+&lt;p&gt;A custom module is used to create records for the &amp;ldquo;example.com&amp;rdquo; domain. The zone ID is retrieved via the &amp;ldquo;cloudflare_zone&amp;rdquo; data source and passed to the module along with the records to create.
+Records are organized by type (A, CNAME, MX, and TXT) and created as separate resources with the appropriate parameters.
+Terraform also provides version control for DNS records and easy rollback capability. Overall, Terraform and Cloudflare together offer a powerful, scalable solution for managing DNS records as code.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Docker image with buildx inside</title>
       <link>https://dovh.io/posts/2022-05-26-docker-with-buildx/</link>
       <pubDate>Thu, 26 May 2022 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2022-05-26-docker-with-buildx/</guid>
-      <description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
-GitHub Repo</description>
+      <description>&lt;h2 id=&#34;base-docker-image-with-buildx&#34;&gt;Base docker image with buildx&lt;/h2&gt;
+&lt;p&gt;Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vdovhanych/docker-and-buildx&#34;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Raspberry Pi 4 Kubernetes cluster</title>
       <link>https://dovh.io/posts/2022-10-04-pi-cluster/</link>
       <pubDate>Sun, 10 Apr 2022 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2022-10-04-pi-cluster/</guid>
-      <description>Installation Prepare the image for Raspberry Pi Download Pi imager
-Setup each nodes SD card
-k3s Install To install k3s on Raspberry pi-cluster i have used awesome opensource project k3s-ansible
-Follow the instructions on how to install k3s in the projects readme.</description>
+      <description>&lt;h1 id=&#34;installation&#34;&gt;Installation&lt;/h1&gt;
+&lt;h2 id=&#34;prepare-the-image-for-raspberry-pi&#34;&gt;Prepare the image for Raspberry Pi&lt;/h2&gt;
+&lt;p&gt;Download &lt;a href=&#34;https://www.raspberrypi.com/software/&#34;&gt;Pi imager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Setup each nodes SD card&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pi-imager1&#34; loading=&#34;lazy&#34; src=&#34;https://dovh.io/posts/images/pi-cluster/pi-imager-os.png&#34;&gt;
+&lt;img alt=&#34;pi-imager2&#34; loading=&#34;lazy&#34; src=&#34;https://dovh.io/posts/images/pi-cluster/pi-imager-settings.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;k3s-install&#34;&gt;k3s Install&lt;/h2&gt;
+&lt;p&gt;To install k3s on Raspberry pi-cluster i have used awesome opensource project
+&lt;img alt=&#34;k3s-ansible-cover&#34; loading=&#34;lazy&#34; src=&#34;https://camo.githubusercontent.com/1d58775f8b90fa83b237600ddc6112cad2e93e912d4b6b754e991a036631aa64/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f43626b455763555a377a4d2f302e6a7067&#34;&gt;
+&lt;a href=&#34;https://github.com/techno-tim/k3s-ansible&#34;&gt;k3s-ansible&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Follow the instructions on how to install k3s in the projects readme.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Automatic release drafting to Github Releases</title>
       <link>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</link>
       <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2021-05-20-github-actions-automatic-release/</guid>
-      <description>Generate draft release on GitHub with GitHub Actions I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker.</description>
+      <description>&lt;h2 id=&#34;generate-draft-release-on-github-with-github-actions&#34;&gt;Generate draft release on GitHub with GitHub Actions&lt;/h2&gt;
+&lt;p&gt;I was trying to find a way to do GitHub releases with GitHub Actions or GitLab CI. When I happen to find semantic-release project. One of the benefits of GitHub Actions is that the majority of its users open source their workflows by default. I was able to kick start my workflow for keeping up with releases thanks to code from benmvp, a GitHub user and keynote speaker. This was a huge help with setting up our CI to create drafted releases directly to GitHub Release page.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GitHub Actions</title>
       <link>https://dovh.io/posts/2021-05-20-github-actions-basics/</link>
       <pubDate>Thu, 20 May 2021 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2021-05-20-github-actions-basics/</guid>
-      <description>GitHub Actions and Workflows Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.
-This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
-Why care about Github Actions? Before we get into the technical detail let&amp;rsquo;s discussed why developers should care about Github Actions in the first place and which benefits they provide.</description>
+      <description>&lt;h2 id=&#34;github-actions-and-workflows&#34;&gt;GitHub Actions and Workflows&lt;/h2&gt;
+&lt;p&gt;Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.&lt;/p&gt;
+&lt;p&gt;This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.&lt;/p&gt;
+&lt;h3 id=&#34;why-care-about-github-actions&#34;&gt;Why care about Github Actions?&lt;/h3&gt;
+&lt;p&gt;Before we get into the technical detail let&amp;rsquo;s discussed why developers should care about Github Actions in the first place and which benefits they provide.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>HomeBridge setup</title>
       <link>https://dovh.io/posts/2021-04-11-homebridge-setup/</link>
       <pubDate>Sun, 11 Apr 2021 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2021-04-11-homebridge-setup/</guid>
-      <description>HomeBridge setup and supported accessories. Homebridge instalation. Simple way to install it, is using docker and docker compose.
-version: &amp;#39;2&amp;#39; services: homebridge: image: oznu/homebridge:ubuntu restart: always network_mode: host environment: - PGID=1000 - PUID=1000 - HOMEBRIDGE_CONFIG_UI=1 - HOMEBRIDGE_CONFIG_UI_PORT=8581 - TZ=Canberra/Australia volumes: - ./volumes/homebridge:/homebridge For more ways to install and for configuration options head to the official docs of HomeBridge here.</description>
+      <description>&lt;h2 id=&#34;homebridge-setup-and-supported-accessories&#34;&gt;HomeBridge setup and supported accessories.&lt;/h2&gt;
+&lt;h3 id=&#34;homebridge-instalation&#34;&gt;Homebridge instalation.&lt;/h3&gt;
+&lt;p&gt;Simple way to install it, is using docker and docker compose.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;2&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;homebridge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;oznu/homebridge:ubuntu&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;restart&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;always&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;network_mode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;PGID=1000&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;PUID=1000&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;HOMEBRIDGE_CONFIG_UI=1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;HOMEBRIDGE_CONFIG_UI_PORT=8581&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;TZ=Canberra/Australia&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;./volumes/homebridge:/homebridge&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For more ways to install and for configuration options head to the official docs of HomeBridge &lt;a href=&#34;https://github.com/homebridge/homebridge/wiki&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Getting Started with iOS App</title>
       <link>https://dovh.io/posts/2021-04-05-gettingstartedios/</link>
       <pubDate>Sun, 04 Apr 2021 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2021-04-05-gettingstartedios/</guid>
-      <description>Basic steps to start developing. Jump Right In Start Developing iOS Apps (Swift) is the perfect starting point for learning to create apps that run on iPhone and iPad. View this set of incremental lessons as a guided introduction to building your first app—including the tools, major concepts, and best practices that will ease your path.
-Each lesson contains a tutorial and the conceptual information you need to complete it. The lessons build on each other, walking you through a step-by-step process of creating a simple, real-world iOS app.</description>
+      <description>&lt;h2 id=&#34;basic-steps-to-start-developing&#34;&gt;Basic steps to start developing.&lt;/h2&gt;
+&lt;h3 id=&#34;jump-right-in&#34;&gt;Jump Right In&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Start Developing iOS Apps (Swift)&lt;/em&gt;  is the perfect starting point for learning to create apps that run on iPhone and iPad. View this set of incremental lessons as a guided introduction to building your first app—including the tools, major concepts, and best practices that will ease your path.&lt;/p&gt;
+&lt;p&gt;Each lesson contains a tutorial and the conceptual information you need to complete it. The lessons build on each other, walking you through a step-by-step process of creating a simple, real-world iOS app.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Randomizer3 iPhone App</title>
       <link>https://dovh.io/posts/2021-01-12-randomizer3/</link>
       <pubDate>Tue, 12 Jan 2021 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2021-01-12-randomizer3/</guid>
-      <description>Simple app that generates random Dota 2 heroes and also tasty food. Randomizer3 on Github</description>
+      <description>&lt;hr&gt;
+&lt;h2 id=&#34;simple-app-that-generates-random-dota-2-heroes-and-also-tasty-food&#34;&gt;Simple app that generates random Dota 2 heroes and also tasty food.&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vdovhanych/Randomizer3&#34;&gt;Randomizer3 on Github&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>About me</title>
       <link>https://dovh.io/about/</link>
       <pubDate>Wed, 25 Mar 2020 17:51:42 +0000</pubDate>
-      
       <guid>https://dovh.io/about/</guid>
-      <description> My name is Vitalij, I am overall IT enthusiast from the Czech Republic, currently working as DevOps engineer and helping with the creation of the best hardware crypto wallet.
-I am very passionate about technology, running, gaming, watching TV shows, and especially pretty much all IT-related stuff.
-GitHub Stats: 🏆 GitHub Trophies </description>
+      <description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;My name is Vitalij, I am overall IT enthusiast from the Czech Republic, currently working as DevOps engineer and helping with the creation of the best hardware crypto wallet.&lt;/p&gt;
+&lt;p&gt;I am very passionate about technology, running, gaming, watching TV shows, and especially pretty much all IT-related stuff.&lt;/p&gt;
+&lt;h2 id=&#34;github-stats&#34;&gt;GitHub Stats:&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://github-readme-stats.vercel.app/api?username=vdovhanych&amp;theme=dracula&amp;hide_border=false&amp;include_all_commits=true&amp;count_private=true&#34;&gt; &lt;img loading=&#34;lazy&#34; src=&#34;https://github-readme-streak-stats.herokuapp.com/?user=vdovhanych&amp;theme=dracula&amp;hide_border=false&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-github-trophies&#34;&gt;🏆 GitHub Trophies&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://github-profile-trophy.vercel.app/?username=vdovhanych&amp;theme=radical&amp;no-frame=false&amp;no-bg=true&amp;margin-w=4&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;https://visitcount.itsvg.in&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://visitcount.itsvg.in/api?id=vdovhanych&amp;icon=0&amp;color=0&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

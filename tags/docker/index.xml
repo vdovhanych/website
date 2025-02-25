@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>docker on DOVH</title>
+    <title>Docker on DOVH</title>
     <link>https://dovh.io/tags/docker/</link>
-    <description>Recent content in docker on DOVH</description>
+    <description>Recent content in Docker on DOVH</description>
     <image>
       <title>DOVH</title>
       <url>https://dovh.io/img/logo.png</url>
       <link>https://dovh.io/img/logo.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 26 May 2022 09:00:00 +0000</lastBuildDate><atom:link href="https://dovh.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dovh.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker image with buildx inside</title>
       <link>https://dovh.io/posts/2022-05-26-docker-with-buildx/</link>
       <pubDate>Thu, 26 May 2022 09:00:00 +0000</pubDate>
-      
       <guid>https://dovh.io/posts/2022-05-26-docker-with-buildx/</guid>
-      <description>Base docker image with buildx Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.
-GitHub Repo</description>
+      <description>&lt;h2 id=&#34;base-docker-image-with-buildx&#34;&gt;Base docker image with buildx&lt;/h2&gt;
+&lt;p&gt;Base docker image with docker and buildx installed in it. This image was created for use in GitLab CI for building multiarch images.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/vdovhanych/docker-and-buildx&#34;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
