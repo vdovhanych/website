@@ -1,6 +1,8 @@
 baseURL: "https://dovh.io"
 title: DOVH
-paginate: 5
+pagination:
+  pagerSize: 5
+
 theme: PaperMod
 
 enableRobotsTXT: true
